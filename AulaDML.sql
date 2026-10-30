@@ -36,4 +36,4 @@ ROLLBACK -- <- Para desfazer codigos inseridos de forma erronea.
 COMMIT -- <- Para fechar o banco.
 
 
-UPDATE PROFESSOR SET nome = 'Guilherme da Silva' WHERE registro_professor = 1050 -- <- Corrigindo
+UPDATE PROFESSOR SET nome = 'Guilherme da Silva' WHERE registro_professor = 1050 -- <- Corrigido

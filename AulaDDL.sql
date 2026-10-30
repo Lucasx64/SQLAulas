@@ -36,6 +36,8 @@ CREATE TABLE CURSO(
 	constraint ck_curso_carga CHECK (carga_horaria > 0)
 );
 
+ALTER TABLE CURSO DROP CONSTRAINT fk_curso_aluno;
+ALTER TABLE CURSO ADD CONSTRAINT fk_curso_professor FOREIGN KEY (registro_professor) REFERENCES PROFESSOR (registro_professor);
 
 ---COMANDO PARA CONFERIR A ESTRUTURA
 --EXEC sp_help 'CURSO';
